@@ -42,7 +42,7 @@ if(isset($_REQUEST['username']))
 	{
 		echo "<div class='form'>
 		<h3>REQUIRED FIELDS ARE MISSING.</h3><br/>
-		<p class='link'>CLICK HERE TO <a href='registration.php'>REGISTRATION</a>AGAIN.</p>
+		<p class='link'>CLICK HERE TO <a href='registration.php'>REGISTER</a>AGAIN.</p>
 		</div>";
 		
 	}
