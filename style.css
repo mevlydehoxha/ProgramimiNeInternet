@@ -1,38 +1,60 @@
 body{
-	background: #D4B996FF;
+	background: #1F2739;
+	
+	
 }
 
 .form{
 	margin:50px auto;
 	width:300px;
-	padding:30px 24px;
-	background:#A07855FF
+	padding:30px 25px;
+	background:#B0B8B4FF;
+	border-style: solid;
+	border-color:gray;
+	position:relative;
+	top:10px;
 }
-h1.login-title{
-	color:#A2A2A1FF;
+h1.title{
+	color:#101820FF;
 	margin:0px auto 25px;
 	font-size:25px;
 	font-weight:300;
 	text-align:center;
 }
+::placeholder {
+  color: #101820FF;
+ 
+}
+input:focus::-webkit-input-placeholder {
+    color:#101820FF;
+}
+ 
 
-.login-input{
+
+.input{
 	font-size:15px;
-	border:1px solid #ccc;
+	color:#101820FF;
+	border: none;
+    border-bottom: 2px solid #101820FF;
 	padding:10px;
 	margin-bottom:25px;
 	height:25px
 	width calc(100%-23px);
 	position:relative;
 	left:40px;
+    background-color:#B0B8B4FF;
+	
+	
+    
 	
 }
-.login-input:focus{
-	border-color:#00001a;
+.input:focus{
+	border-color:#101820FF;
+	
 	outline:none;
-	background:#FAEBEFFF;
+	background:#C7D3D4FF;
 }
-.login-button{
+.button{
 	color:#fff;
 	background:#4B878BFF;
 	border:0;
@@ -44,13 +66,19 @@ h1.login-title{
 	cursor:pointer;
 }
 .link{
-	color:#666;
+	color:#101820FF;
 	font-size:15px;
 	text-align:center;
 	margin-bottom:0px;
+	text-decoration:none;
+	
 }
 .link a{
-	color:#00203FFF;
+	color:#101820FF;
+	text-decoration:none;
+}
+link:hover{
+	color:#F1F4FFFF;
 }
 h3{
 	font-weight:normal;
@@ -64,3 +92,116 @@ h3{
 	bottom:-40px;
 	
 }
+.tabela{
+border:1px solid black;
+border-collapse:collapse;
+
+position:relative;
+left:300px;
+
+	
+}
+
+a.link1:link, a.link1:visited {
+  background-color: #4B878BFF;
+  color: white;
+  padding: 10px 63px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position:relative;
+  top:-14px;
+}
+
+a.link1:hover,a.link1:active {
+  background-color: #80b3ff;
+}
+a.link2:link, a.link2:visited {
+  background-color: #4B878BFF;
+  color: white;
+  font-size:18px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.link2:hover,a.link2:active {
+  background-color: #80b3ff;
+}
+
+
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color:#A7A1AE;
+  background-color:#1F2739;
+}
+
+h1 {
+  font-size:3em; 
+  font-weight: 300;
+  line-height:1em;
+  text-align: center;
+  color: #4DC3FA;
+}
+
+h2 {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 2em;
+  color: #FB667A;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FB667A;
+  text-decoration: none;
+}
+
+
+.container th h1 {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+
+
+
+.container {
+	  text-align: left;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.container td, .container th {
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+  padding-left:2%;  
+}
+
+.container tr:nth-child(odd) {
+	  background-color: #323C50;
+}
+
+.container tr:nth-child(even) {
+	  background-color: #2C3446;
+}
+
+.container th {
+	  background-color: #1F2739;
+}
+
+.container td:first-child { color: #FB667A; }
+
