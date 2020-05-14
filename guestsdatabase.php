@@ -15,6 +15,7 @@ include("user.php");
 <p><a href="email.php" class="link5">CONTACT</a></p>
 <p><a href="ajax.php" class="link6">FIND</a></p>
 <p><a href="ajaxdb.php" class="link7">SHOW RECORDS</a></p>
+<p><a href="login.php" class="link1" style="position:relative;top:-84px">LOGOUT</a></p>
 
 <h1>CLIENTS DATABASE</h1>
 <?php
