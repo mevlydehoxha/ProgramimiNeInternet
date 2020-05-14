@@ -13,6 +13,8 @@ include("user.php");
 <p><a href="guests.php" class="link3" >CREATE</a></p>
 <p><a href="delete.php" class="link4">DELETE</a></p>		
 <p><a href="email.php" class="link5">CONTACT</a></p>
+<p><a href="ajax.php" class="link6">FIND</a></p>
+<p><a href="ajaxdb.php" class="link7">SHOW RECORDS</a></p>
 
 <h1>CLIENTS DATABASE</h1>
 <?php
@@ -30,7 +32,7 @@ if($result=mysqli_query($link,$sql))
 	
 	echo"<thead>";
 		echo"<tr>";
-		echo"<th><h1> ID</h1></th>";
+		
 			echo"<th><h1>First name</h1></th>";
 			echo "<th><h1>Last name</h1></th>";
 			echo "<th><h1>Room</h1></th>";
@@ -42,7 +44,7 @@ if($result=mysqli_query($link,$sql))
 		while($row=mysqli_fetch_array($result)){
 			echo"<tbody>";
 		echo"<tr>";
-		    echo"<td>".$row['id']."</td>";
+		   
 			echo"<td>".$row['firstname']."</td>";
 			echo"<td>".$row['lastname']."</td>";
 			echo"<td>".$row['room']."</td>";
