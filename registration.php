@@ -18,6 +18,14 @@ if(isset($_REQUEST['username']))
 	$lasename=mysqli_real_escape_string($conn,$lastname);
 	$email=stripslashes($_REQUEST['email']);
 	$email=mysqli_real_escape_string($conn,$email);
+	function regex($email)
+    {
+    if( !preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+
+                     ([a-zA-Z0-9\._-]+)+$/", $email))
+    {
+        echo"E-MAIL-I ESHTE JO VALID";
+    }	
+	}
 	$phoneno=stripslashes($_REQUEST['phoneno']);
 	$phoneno=mysqli_real_escape_string($conn,$phoneno);
 	$address=stripslashes($_REQUEST['address']);
@@ -31,42 +39,60 @@ if(isset($_REQUEST['username']))
 	$query="INSERT INTO `users` (username,firstname,lastname,email,phoneno,address,birthdate,shift,password)
 	VALUES ('$username','$firstname','$lastname','$email','$phoneno','$address','$birthdate','$shift','" .md5($password)."')";
 	$result =mysqli_query($conn,$query);
+	
+	
+  
+    
+	
+	
+   
+	
 	if($result)
 	{
+		echo "USER WITH REGEX-";
+		echo str_replace(" ",".",$username);
 		echo "<div class='form'>
 		<h3>YOU ARE REGISTRED.</h3></br>
-		<p class='link'>CLICK HERE TO <a href='login.php'>LOGIN </a></p>
+		<p class='link'><a href='login.php'>CLICK HERE TO LOGIN </a></p>
 		</div>";
+		
+		
+		
 	}
 	else
 	{
 		echo "<div class='form'>
 		<h3>REQUIRED FIELDS ARE MISSING.</h3><br/>
-		<p class='link'>CLICK HERE TO <a href='registration.php'>REGISTER</a>AGAIN.</p>
+		<p class='link'><a href='registration.php'>CLICK HERE TO REGISTER </a>AGAIN.</p>
 		</div>";
 		
 	}
 }
 else{
 	?>
-	<img src="foto1.jpg" class="gif">
+	
 	<form class="form" action="" method="post">
-	<h1 class="title">REGISTRATION </h1>
+	<h1 class="title">REGISTRATION FOR EMPLOYEES </h1>
 	<input type="text" class="input" name="firstname" placeholder="First name" required/>
 	<input type="text" class="input" name="lastname" placeholder="Last name" required/>
 	<input type="text" class="input" name="email" placeholder="E-mail" required/>
 	<input type="text" class="input" name="phoneno" placeholder="Phone number" required/>
 	<input type="text" class="input" name="address" placeholder="Address" required/>
-	<input type="text" class="input" name="birthdate" placeholder="Birth date" required/>
-	<input type="text" class="input" name="shift" placeholder="Shift" required/>
+	<input type="date" class="input" name="birthdate" placeholder="Birth date" required/>
+    <input type="text" class="input" name="shift" placeholder="Shift" required/>
 	<input type="text" class="input" name="username" placeholder="Username" required/>
 	<input type="password" class="input" name="password" placeholder="Password">
-	<h2>hi</h2>
 	<input type="submit" name="submit" value="Register" class="button">
 	<p class="link"><a href="login.php">CLICK HERE TO LOGIN</a></p>
 	</form>
+
 	<?php 
 }
+
+
+	
+
+   
 ?>
 </body>
 </html>
