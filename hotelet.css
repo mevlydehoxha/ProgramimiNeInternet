@@ -45,4 +45,17 @@ h2 {
     75% {background-color: #52544d;}
     100% {background-color: ##3d374f;}
 }
+a.link2:link, a.link2:visited {
+  background-color: #4B878BFF;
+  color: white;
+  font-size:19px;
+  padding: 10px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.link2:hover,a.link2:active {
+  background-color: #80b3ff;
+}
 

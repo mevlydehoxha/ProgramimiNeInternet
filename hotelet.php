@@ -133,6 +133,12 @@ session_start();
                 <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
             </form>
         </div>
+			<hr>
+		<p style="align:center">This is an app dedicated to hotels.We created it to make the work easier.You can simply create a database for your empoyees and clients.</p>
+		<h4>If you want this app for your business please contact to our team for more info.</h4>
+		<p><a href="login.php" class="link2" >LOGIN</a></p>
+		<p><a href="registration.php" class="link2" style="padding: 10px 84px;">REGISTER</a></p>
+		
 		
 </body>
 </html>
