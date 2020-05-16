@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <title>Login</title>
-<link rel="stylesheet" href="style1.css"/></head>
+<link rel="stylesheet" href="style10.css"/></head>
 <body>
 <?php
 require('db.php');
@@ -21,7 +21,7 @@ if(isset($_POST['username']))
 	if($rows==1)
 	{
 		$_SESSION['username']=$username;
-		header("Location: dashboard.php");
+		header("Location: guests.php");
 		
 	}
 	else
@@ -34,13 +34,13 @@ if(isset($_POST['username']))
 }
 else{
 	?>
-	<img src="foto1.jpg" class="gif">
+	
 	<form class="form" method="post" name="login">
 	<h1 class="title">LOGIN</h1>
 	<input type="text" class="input" name="username" placeholder="Username" autofocus="true"/>
 	<input type="password" class="input" name="password" placeholder="Password"/>
 	<input type="submit" value="Login" name="submit" class="button"/>
-	<p class="link"><a href="registration.php">CLICK HERE TO REGISTER</a></p>
+	<p class="link"><a href="registration.php">CLICK HERE TO REGISTER MORE EMPLOYEES</a></p>
 	</form>
 	
 <?php
