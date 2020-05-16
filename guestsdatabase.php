@@ -5,7 +5,7 @@ include("user.php");
 <html>
 <head>
 <meta charset="utf-8"/>
-<link rel="stylesheet" href="style8.css"/>
+<link rel="stylesheet" href="style.css"/>
 <title>Guests database</title>
 </head>
 <body>
@@ -20,12 +20,12 @@ include("user.php");
 <h1>CLIENTS DATABASE</h1>
 <?php
 $link =mysqli_connect("localhost:3307","root",'',"guests");
-           
-
+  
 if($link==false){
 	die("KONEKTIMI DESHTOJ".mysqli_connect_errno());
 }
 $sql="SELECT * FROM guests";
+
 if($result=mysqli_query($link,$sql))
 {
 	if(mysqli_num_rows($result)>0){
@@ -33,7 +33,6 @@ if($result=mysqli_query($link,$sql))
 	
 	echo"<thead>";
 		echo"<tr>";
-		
 			echo"<th><h1>First name</h1></th>";
 			echo "<th><h1>Last name</h1></th>";
 			echo "<th><h1>Room</h1></th>";
@@ -45,15 +44,15 @@ if($result=mysqli_query($link,$sql))
 		while($row=mysqli_fetch_array($result)){
 			echo"<tbody>";
 		echo"<tr>";
-		   
+		    
 			echo"<td>".$row['firstname']."</td>";
 			echo"<td>".$row['lastname']."</td>";
 			echo"<td>".$row['room']."</td>";
 			echo"<td>".$row['arrivaldate']."</td>";
 			echo"<td>".$row['deperaturedate']."</td>";
 			echo"<td>".$row['price']."</td>";
-	
-            $file = fopen('data.txt', 'w');
+			
+			$file = fopen('data2.txt', 'w');
             fwrite($file,$row['id']);"<br>";
 			fwrite($file,$row['firstname']);"<br>";
 			fwrite($file,$row['lastname']);"<br>";
@@ -62,6 +61,8 @@ if($result=mysqli_query($link,$sql))
 			fwrite($file,$row['deperaturedate']);"<br>";
 			fwrite($file,$row['price']);"<br>";
             fclose($file);
+
+	
 		echo"</tr>";
 		}
 	echo"</tbody>";
@@ -77,7 +78,6 @@ else{
 	echo"KONEKTIMI KA DESHTUAR".mysqli_error($link);
 }
 mysqli_close($link);
-
 
 
 
