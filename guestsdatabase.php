@@ -9,13 +9,15 @@ include("user.php");
 <title>Guests database</title>
 </head>
 <body>
-<p><a href="" class="link2">Employ: <?php echo $_SESSION['username'];?></a></p>
+<p><a href="" class="link2" style="width:13.07%">Employ: <?php echo $_SESSION['username'];?></a></p>
 <p><a href="guests.php" class="link3" >CREATE</a></p>
 <p><a href="delete.php" class="link4">DELETE</a></p>		
 <p><a href="email.php" class="link5">CONTACT</a></p>
 <p><a href="ajax.php" class="link6">FIND</a></p>
 <p><a href="ajaxdb.php" class="link7">SHOW RECORDS</a></p>
-<p><a href="login.php" class="link1" style="position:relative;top:-84px">LOGOUT</a></p>
+<p><a href="cookies.php" class="link7" style="position:relative;top:-84px;width:9.43%">COOKIES</a></p>
+<p><a href="twitter_login_php/index.php" class="link7" style="position:relative;top:-98px;width:9.43%">TWITTER</a></p>
+<p><a href="login.php" class="link1" style="position:relative;top:-112px">LOGOUT</a></p>
 
 <h1>CLIENTS DATABASE</h1>
 <?php
