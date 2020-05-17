@@ -43,7 +43,7 @@ p{
   perspective: 1000px; /* Efekti 3d */
 }
 
-/* Kontenjeri per pozicionimin e pjeses mbrapa dhe para */
+/* Kontenjeri per pozicionimin e pjeses prapa dhe para */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -53,12 +53,12 @@ p{
   transform-style: preserve-3d;
 }
 
-/* Ben nje kthim horizondal kur kalojm me mous te flip card */
+/* Bene nje kthim horizontal kur kalojme me mi te flip card */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Pozicionimi i pjeses perpara dhe mbrapa */
+/* Pozicionimi i pjeses perpara dhe prapa */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -72,7 +72,7 @@ p{
   color: black;
 }
 
-/*Stilizimi mbrapa i flip card */
+/*Stilizimi prapa i flip card */
 .flip-card-back {
   background-color: #ad8599;
   color: white;
