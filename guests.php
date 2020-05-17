@@ -52,9 +52,9 @@ if(isset($_REQUEST['firstname']))
 }
 else{
 	?>
-	<p ><a href="" class="link2">Employ: <?php echo $_SESSION['username'];?></a></p>
-<p><a href="login.php" class="link1" >LOGOUT</a></p>
-<p><a href="guestsdatabase.php" class="link4" style="width:4.38%">SHOW DATABASE</a></p>
+	<p ><a href="" class="link2" style="width:13.07%">Employ: <?php echo $_SESSION['username'];?></a></p>
+<p><a href="guestsdatabase.php" class="link4" style="width:4.38%;top:-14px;">SHOW DATABASE</a></p>
+<p><a href="login.php" class="link1" style="top:-28px" >LOGOUT</a></p>
 <form class="form" action="" method="post">
 	<h1 class="title">GUESTS REGISTRATION</h1>
 	<input type="text" class="input" name="firstname" placeholder="First name" required/>
@@ -75,4 +75,3 @@ else{
 ?>
 </body>
 </html>
-

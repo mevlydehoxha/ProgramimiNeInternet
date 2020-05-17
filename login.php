@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <title>Login</title>
-<link rel="stylesheet" href="style10.css"/></head>
+<link rel="stylesheet" href="style.css"/></head>
 <body>
 <?php
 require('db.php');
