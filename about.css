@@ -1,1 +1,161 @@
 
+
+body{
+    font-family: Georgia,"Times New Roman";
+    background-color: #e0e0e0;
+    font-size: 100%;
+    margin: 0em 4em 0.5em 4em; 
+	background-color: #391326;
+}
+
+
+h1{
+    font-size: 24px;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.8em;
+    margin: 0;
+}
+h2{
+    font-size: 27px;
+	color: #ff99cc;
+	text-shadow: 1.5px 1.5px red;
+}
+h3{
+    font-size: 21px;
+    border-bottom: solid 1pt #ecc6ec;
+}
+
+p{
+    font-size: 18px;
+}
+
+.stafi{
+    height: 15px;
+    text-align: center;
+}
+
+/* Kontenjeri i flip kardes per te caktuar gjeresine dhe gjatesine */
+.flip-card {
+  background-color: transparent;
+  width: 305px;
+  height: 275px;
+  perspective: 1000px; /* Efekti 3d */
+}
+
+/* Kontenjeri per pozicionimin e pjeses mbrapa dhe para */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Ben nje kthim horizondal kur kalojm me mous te flip card */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Pozicionimi i pjeses perpara dhe mbrapa */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/*Stilizimi perpara i filp card  */
+.flip-card-front {
+  background-color: #b87a99;
+  color: black;
+}
+
+/*Stilizimi mbrapa i flip card */
+.flip-card-back {
+  background-color: #ad8599;
+  color: white;
+  transform: rotateY(180deg);
+}
+.system{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ngjyra{
+    color: white;
+}
+.c{
+    margin: 8px;
+}
+
+footer{
+    color: white;
+    background-color: 	#862d59;
+}
+.f{
+    color: white;
+}
+.tel{
+    color: black;
+    text-decoration: none;
+}
+div img{
+    border: solid 1px #999999;
+}
+.ex{
+    background-color:#602040;
+    padding: 15px;
+    color: white;
+    margin-top: 4em;
+}
+.ex1{
+    background-color:#602040;
+    padding: 15px;
+    color: white;
+    margin-top: 1em;
+    
+    
+}
+
+.c{
+    border: solid 2.5px grey;
+}
+p{
+    margin: 0 0 0.5em 0;
+}
+
+.M{
+    padding:auto;
+    border: solid 1px #999999;
+}
+
+
+/*stilizimi i footer*/
+footer{
+    margin-top: 1em;
+    padding: 0.5em;
+    font-weight: normal;
+    font-style: oblique;   
+
+}
+footer p{
+    font-size: 14px;
+    
+}
+@media screen and (max-width:1100px){
+	.system{
+        width: 100%;
+        display: inline-block;
+    }
+    .flip-card{
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flip-card:last-child{
+        margin-bottom: 1em;
+    }
+}
