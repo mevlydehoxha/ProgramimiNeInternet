@@ -7,6 +7,7 @@
 <body>
 <?php
 require('db.php');
+require "head.php";
 session_start();
 if(isset($_POST['username']))
 {
