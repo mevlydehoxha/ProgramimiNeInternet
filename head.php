@@ -13,7 +13,7 @@
         <header> 
 		    <small><a class="a" href="hotelet.php">Home</a></small>
             <p class="lidhja" style="display: inline"><small>|</small></p>
-           <small><a class="a" href="registration.php">Regjistrohu</a></small>
+           <small><a class="a" href="registration.php">Register</a></small>
             <p class="lidhja" style="display: inline"><small>|</small></p>
             <small><a class="a" href="login.php">Login</a></small>
             <p class="lidhja" style="display: inline"><small>|</small></p>
