@@ -26,7 +26,7 @@
             </div>
             <div class="flip-card-back">
             <h1>Mevlyde Hoxha</h1> 
-            <p class="ngjyra">Studies Copmuter Engeneering</p>
+            <p class="ngjyra">Studies Computer Engineering</p>
             <p class="ngjyra">at University of Prishtina</p> 
             <p class="ngjyra">~PHP,HTML,CSS,JAVA,C#,PYTHON</p>
             </div>
@@ -40,7 +40,7 @@
             <div class="flip-card-back">
                 <h1>Albin&euml  Ramaj</h1>
                 
-                <p class="ngjyra">Studies Copmuter Engeneering</p>
+                <p class="ngjyra">Studies Computer Engineering</p>
                 <p class="ngjyra">at University of Prishtina</p>
                 <p class="ngjyra">~PHP,HTML,CSS,JAVA,C#,PYTHON</p>
             </div>
@@ -56,7 +56,7 @@
             </div>
             <div class="flip-card-back">
             <h1>Albiona Sylaj</h1> 
-            <p class="ngjyra">Studies Copmuter Engeneering</p>
+            <p class="ngjyra">Studies Computer Engineering</p>
             <p class="ngjyra">at University of Prishtina</p>
             <p class="ngjyra">~PHP,HTML,CSS,JAVA,C#,PYTHON</p>
             </div>
