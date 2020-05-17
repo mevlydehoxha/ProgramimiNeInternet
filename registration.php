@@ -8,6 +8,7 @@
 <body>
 <?php 
 require('db.php');
+require "head.php";
 if(isset($_REQUEST['username']))
 {
 	$username=stripslashes($_REQUEST['username']);
