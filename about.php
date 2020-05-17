@@ -1,11 +1,12 @@
-<?php
-  session_start();
-?>
-
 <!DOCTYPE html>
+<html>
+<?php
+require "head.php";
+?>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head lang="en">
-        <meta charset="utf-8">
+		 <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
         <title>About</title>
 		<link rel="stylesheet" type="text/css" media="screen" href="about.css">
 </head>
@@ -15,7 +16,6 @@
         <h2 style="margin-top: 1em; font-family: Georgia; text-shadow: 2px 2px 5px pruple;"> Stafi </h2>
         </div>
         <hr style="margin-top: 2em;">
-        
         
         <div class="system">    
             <div class="flip-card">
