@@ -1,14 +1,15 @@
- <?php
-session_start();
- ?>
-<html manifest="manifest.appcache">
+ <!DOCTYPE html>
+<html>
+<?php
+require "head.php";
+?>
     <head>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
         
         <link rel="stylesheet" href="hotelet.css">
-       
+        
         <script>
          function getVote(int){
             if(window.XMLHttpRequest){
@@ -32,6 +33,8 @@ session_start();
         </script>
     
     </head>
+	<hr style="margin: 1em -3.1em 0em -3.1em;">
+        <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
 <body>
 
 
@@ -136,11 +139,6 @@ session_start();
 		<hr>
 		<p style="text-align:center;color: #9999ff;">This is an app dedicated to hotels.We created it to make the work easier.</p>
 		<h4 style="text-align:center;color: #9999ff;">If you want this app for your business please contact to our team for more info.</h4>
-		<p style="text-align:center;"><a href="login.php" class="link2" >LOGIN</a></p>
-		<p style="text-align:center;"><a href="registration.php" class="link2" style="padding: 10px 84px;">REGISTER</a></p>
-		<p style="text-align:center;"><a href="about.php" class="link2" style="padding: 10px 98px;">ABOUT</a></p>
-		
 		
 </body>
 </html>
-		
